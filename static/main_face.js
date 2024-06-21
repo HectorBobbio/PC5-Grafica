@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     occluderAnchor.group.add(occluder.scene);
 
     const glasses = await loadGLTF('/static/assets/models/glasses1/scene.gltf');
-    glasses.scene.scale.set(0.1, 0.1, 0.1);
+    glasses.scene.scale.set(0.01, 0.01, 0.01);
     glasses.scene.renderOrder = 1;
     const glassesAnchor = mindarThree.addAnchor(168);
     glassesAnchor.group.add(glasses.scene);
