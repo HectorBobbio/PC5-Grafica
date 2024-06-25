@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: '/static/assets/targets/luka.mind',
+      imageTargetSrc: '/static/assets/targets/luka_luz.mind',
     });
     const {renderer, scene, camera} = mindarThree;
 
@@ -17,14 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //const raccoon = await loadGLTF('/static/assets/models/musicband-raccoon/scene.gltf');
     const raccoon = await loadGLTF('/static/assets/models/upch-dia/images (1).gltf');
+    const chair = await loadGLTF('/static/assets/models/chair/scene.gltf');
+
     //                      X     Y    Z
     raccoon.scene.scale.set(0.01, 0.01, 0.01);
+    chair.scene.scale.set(0.01, 0.01, 0.01);
     //                         X    Y   Z
     raccoon.scene.position.set(0, -0.4, 0);
-
+    chair.scene.position.set(0,-0.4,0);
 
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(raccoon.scene);
+    anchor.group.add(chair.scene);
 
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
