@@ -26,8 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     raccoon.scene.position.set(0, -0.4, 0);
     raccoon2.scene.position.set(0,-0.4,0);
 
-    const anchor = mindarThree.addAnchor(0);
-    anchor.group.add(raccoon.scene, raccoon2.scene);
+    const anchor_1 = mindarThree.addAnchor(0);
+    anchor_1.group.add(raccoon.scene);
+
+    const anchor_2 = mindarThree.addAnchor(1);
+    anchor_2.group.add(raccoon2.scene);
 
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
