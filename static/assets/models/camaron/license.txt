@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shrimp [Low Poly]
+* source:	https://sketchfab.com/3d-models/shrimp-low-poly-652650059ff949b39bbed3bfc34d5e87
+* author:	Fecalis (https://sketchfab.com/vpvlolhyk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shrimp [Low Poly]" (https://sketchfab.com/3d-models/shrimp-low-poly-652650059ff949b39bbed3bfc34d5e87) by Fecalis (https://sketchfab.com/vpvlolhyk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

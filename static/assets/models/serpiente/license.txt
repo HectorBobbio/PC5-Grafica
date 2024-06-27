@@ -1,0 +1,11 @@
+Model Information:
+* title:	Snake
+* source:	https://sketchfab.com/3d-models/snake-9fbd8acf27914256bc2e673352b0e07b
+* author:	Anette Rana (https://sketchfab.com/pertrosfoliea)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Snake" (https://sketchfab.com/3d-models/snake-9fbd8acf27914256bc2e673352b0e07b) by Anette Rana (https://sketchfab.com/pertrosfoliea) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

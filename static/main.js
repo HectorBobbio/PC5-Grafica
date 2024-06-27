@@ -8,28 +8,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: '/static/assets/targets/test-sapo.mind',
+      imageTargetSrc: '/static/assets/targets/ceramica.mind',
     });
     const {renderer, scene, camera} = mindarThree;
 
     const light = new THREE.HemisphereLight( 0xffffff, 0xbbbbff, 1 );
     scene.add(light);
 
-    const rana = await loadGLTF('/static/assets/models/chair/scene.gltf');
+    //xconst raccoon2 = await loadGLTF('/static/assets/models/musicband-raccoon/scene.gltf');
+    //const raccoon = await loadGLTF('/static/assets/models/upch-dia/images (1).gltf');
+    const rana = await loadGLTF('/static/assets/models/rana/scene.gtlf');
+    const pengu = await loadGLTF('/static/assets/models/pinguino/scene.gtlf');
+    const loro = await loadGLTF('/static/assets/models/loro/scene.gtlf');
+    const lobo = await loadGLTF('/static/assets/models/lobo-marino/scene.gtlf');
+    const camaron = await loadGLTF('/static/assets/models/camaron/scene.gtlf');
+
+    //const chair = await loadGLTF('/static/assets/models/chair/scene.gltf');
 
     //                      X     Y    Z
-    rana.scene.scale.set(0.01, 0.01, 0.01);
+    //raccoon.scene.scale.set(0.3, 0.3, 0.3);
     //raccoon2.scene.scale.set(0.03, 0.03, 0.03);
     //                         X    Y   Z
-    rana.scene.position.set(0, -0.4, 0);
+    //raccoon.scene.position.set(0, -0.4, 0);
     //raccoon2.scene.position.set(0,-0.4,0);
 
-    const anchor_1 = mindarThree.addAnchor(0);
-    anchor_1.group.add(rana.scene);
+    rana.scene.scale.set(0.3 , 0.3, 0.3);
+    pengu.scene.scale.set(0.3 , 0.3, 0.3);
+    loro.scene.scale.set(0.3 , 0.3, 0.3);
+    lobo.scene.scale.set(0.3 , 0.3, 0.3);
+    camaron.scene.scale.set(0.3 , 0.3, 0.3);
 
-    //const anchor_2 = mindarThree.addAnchor(1);
-    //anchor_2.group.add(raccoon2.scene);
+    rana.scene.position.set(0, -0.4, 0);
+    pengu.scene.position.set(0, -0.4, 0);
+    loro.scene.position.set(0, -0.4, 0);
+    lobo.scene.position.set(0, -0.4, 0);
+    camaron.scene.position.set(0, -0.4, 0);
+    
+    const anchor_rana = mindarThree.addAnchor(0);
+    anchor_rana.group.add(rana.scene);
 
+    const anchor_pengu = mindarThree.addAnchor(1);
+    anchor_pengu.group.add(pengu.scene);
+
+    const anchor_loro = mindarThree.addAnchor(2);
+    anchor_loro.group.add(loro.scene);
+
+    const anchor_lobo = mindarThree.addAnchor(3);
+    anchor_lobo.group.add(lobo.scene);
+
+    const anchor_camaron = mindarThree.addAnchor(4);
+    anchor_camaron.group.add(camaron.scene);
+
+
+    //const anchor_1 = mindarThree.addAnchor(0);
+    //anchor_1.group.add(raccoon.scene);
+
+    /*
+    const anchor_2 = mindarThree.addAnchor(1);
+    anchor_2.group.add(raccoon2.scene);
+    */
+    
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
       renderer.render(scene, camera);
