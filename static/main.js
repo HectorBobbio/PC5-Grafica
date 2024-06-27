@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     camaron.scene.scale.set(0.2 , 0.2, 0.2);
     ciervo.scene.scale.set(0.01 , 0.01, 0.01);
 
-    rana.scene.position.set(5, 0, 0);
-    loro.scene.position.set(5, 0, 0);
-    pinguino.scene.position.set(5, 0, 0);
-    camaron.scene.position.set(5, 0, 0);
-    ciervo.scene.position.set(5, 0, 0);
+    rana.scene.position.set(1, 0, 0);
+    loro.scene.position.set(1, 0, 0);
+    pinguino.scene.position.set(1, 0, 0);
+    camaron.scene.position.set(1, 0, 0);
+    ciervo.scene.position.set(1, 0, 0);
     
     const anchor_rana = mindarThree.addAnchor(0);
     anchor_rana.group.add(rana.scene);
