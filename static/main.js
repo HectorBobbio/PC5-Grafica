@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // const loro = await loadGLTF('/static/assets/models/loro/scene.gtlf');
     const lobo = await loadGLTF('/static/assets/models/lobo-marino/scene.gtlf');
     const camaron = await loadGLTF('/static/assets/models/camaron/scene.gtlf');
-    const ciervo = await loadGLTF('/static/assets/models/ciervo/scene/gltf');
+    const ciervo = await loadGLTF('/static/assets/models/ciervo/scene.gtlf');
 
 
     //const chair = await loadGLTF('/static/assets/models/chair/scene.gltf');
