@@ -34,17 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
     //raccoon.scene.position.set(0, -0.4, 0);
     //raccoon2.scene.position.set(0,-0.4,0);
 
-    rana.scene.scale.set(1 , 1, 1);
-    loro.scene.scale.set(0.3 , 0.3, 0.3);
-    pinguino.scene.scale.set(0.3 , 0.3, 0.3);
-    camaron.scene.scale.set(0.3 , 0.3, 0.3);
-    ciervo.scene.scale.set(0.3 , 0.3, 0.3);
+    rana.scene.scale.set(2 , 2, 2);
+    loro.scene.scale.set(0.5 , 0.5, 0.5);
+    pinguino.scene.scale.set(0.2 , 0.2, 0.2);
+    camaron.scene.scale.set(0.2 , 0.2, 0.2);
+    ciervo.scene.scale.set(0.01 , 0.01, 0.01);
 
-    rana.scene.position.set(0, -0.4, 0);
-    loro.scene.position.set(0, -1, 0);
-    pinguino.scene.position.set(0, -0.4, 0);
-    camaron.scene.position.set(0, -0.4, 0);
-    ciervo.scene.position.set(0, -0.4, 0);
+    rana.scene.position.set(5, 0, 0);
+    loro.scene.position.set(5, 0, 0);
+    pinguino.scene.position.set(5, 0, 0);
+    camaron.scene.position.set(5, 0, 0);
+    ciervo.scene.position.set(5, 0, 0);
     
     const anchor_rana = mindarThree.addAnchor(0);
     anchor_rana.group.add(rana.scene);
