@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     camaron.scene.position.set(0.4, 0, 0);
     ciervo.scene.position.set(0.4, 0, 0);
 
-    pinguino.scene.rotation.set(0,1,0)
-    ciervo.scene.rotation.set(0,1,0)
+    pinguino.scene.rotation.set(0,-1.5,0)
+    ciervo.scene.rotation.set(0,-1.5,0)
     
     const anchor_rana = mindarThree.addAnchor(0);
     anchor_rana.group.add(rana.scene);
