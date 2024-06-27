@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //xconst raccoon2 = await loadGLTF('/static/assets/models/musicband-raccoon/scene.gltf');
     //const raccoon = await loadGLTF('/static/assets/models/upch-dia/images (1).gltf');
-    const rana = await loadGLTF('/static/assets/models/rana/scene.gtlf');
-    const pengu = await loadGLTF('/static/assets/models/pinguino/scene.gtlf');
+    const rana = await loadGLTF('/static/assets/models/rana/scene.gltf');
+    const pengu = await loadGLTF('/static/assets/models/pinguino/scene.gltf');
     // const loro = await loadGLTF('/static/assets/models/loro/scene.gtlf');
-    const lobo = await loadGLTF('/static/assets/models/lobo-marino/scene.gtlf');
-    const camaron = await loadGLTF('/static/assets/models/camaron/scene.gtlf');
-    const ciervo = await loadGLTF('/static/assets/models/ciervo/scene.gtlf');
+    const lobo = await loadGLTF('/static/assets/models/lobo-marino/scene.gltf');
+    const camaron = await loadGLTF('/static/assets/models/camaron/scene.gltf');
+    const ciervo = await loadGLTF('/static/assets/models/ciervo/scene.gltf');
 
 
     //const chair = await loadGLTF('/static/assets/models/chair/scene.gltf');
